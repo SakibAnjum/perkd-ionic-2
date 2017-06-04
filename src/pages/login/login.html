@@ -1,0 +1,44 @@
+<ion-content class="login-page" >
+
+  <div class="logo">
+    <img src="assets/img/appicon.svg" alt="Ionic Logo">
+  </div>
+
+  <form #signupForm="ngForm" novalidate>
+    <ion-list no-lines>
+      <ion-item-divider>
+        <!--<ion-level>-->
+            <!--+880-->
+        <!--</ion-level>-->
+        <ion-input name="mobileNumber" type="number" placeholder="+880 " required>
+        </ion-input>
+      </ion-item-divider>
+
+      <ion-item-divider>
+        <ion-input name="password" type="password" placeholder="Password" required>
+        </ion-input>
+      </ion-item-divider>
+    </ion-list>
+
+    <div padding>
+      <ion-row>
+        <ion-col col-6 offset-2>
+          <button ion-button (click)="onLogin(loginForm)" type="submit" block>Login</button>
+        </ion-col>
+        <ion-col col-4>
+          <ion-icon name="finger-print"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </div>
+  </form>
+
+  <ion-list>
+        <p text-center>
+          Or
+          <a (click)="onSignup()" color="danger">Signup</a>
+        </p>
+  </ion-list>
+
+
+</ion-content>
+

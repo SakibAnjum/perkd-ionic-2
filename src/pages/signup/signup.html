@@ -1,0 +1,40 @@
+<ion-content class="login-page">
+
+	<div class="logo">
+		<img src="assets/img/appicon.svg" alt="Ionic Logo">
+	</div>
+
+	<form #signupForm="ngForm" novalidate>
+		<ion-list no-lines>
+			<ion-item-divider sticky>
+					<ion-row align-items-end (click)="openModal()">
+						<ion-col col-3>
+							<span>Bangladesh</span>
+						</ion-col>
+						<ion-col col-2 offset-7>
+							<ion-icon name="arrow-forward"></ion-icon>
+						</ion-col>
+					</ion-row>
+			</ion-item-divider>
+
+			<ion-item-divider>
+				<ion-input name="mobileNumber" type="number" placeholder="+880 " required>
+				</ion-input>
+			</ion-item-divider>
+		</ion-list>
+
+		<div padding>
+			<ion-row>
+				<ion-col col-6 offset-3>
+					<button ion-button (click)="onSignup(signupForm)" type="submit" block>Signup</button>
+				</ion-col>
+			</ion-row>
+		</div>
+	</form>
+
+	<ion-list>
+    <p text-center>Or <a (click)="onLogin()">Log In</a></p>
+	</ion-list>
+
+
+</ion-content>

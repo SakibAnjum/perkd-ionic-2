@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="yellow">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Preferences</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="preferences" padding>
+
+  <h4>Remind me</h4>
+  <ion-list>
+    <button color="dark" ion-item (click)="goToBeforeCardExpire()">before card expire
+      <ion-icon name="ios-arrow-forward" ></ion-icon>
+    </button>
+
+    <button color="dark" ion-item>before offer expire
+      <ion-icon name="ios-arrow-forward" ></ion-icon>
+    </button>
+  </ion-list>
+</ion-content>
