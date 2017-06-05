@@ -11,10 +11,10 @@ import {AddCardModal} from "../add-card-modal/add-card-modal";
  */
 @IonicPage()
 @Component({
-  selector: 'page-associations-non-profits',
-  templateUrl: 'associations-non-profits.html',
+  selector: 'page-travel',
+  templateUrl: 'travel.html',
 })
-export class AssociationsNonProfitsPage {
+export class TravelPage {
   cards: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

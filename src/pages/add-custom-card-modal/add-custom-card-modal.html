@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar hideBackButton color="yellow">
+    <ion-title ion-col>
+      <ion-row>
+        <ion-col col-3>
+          <ion-list text-left><a (click)="closeModal()">Cancel</a></ion-list>
+        </ion-col>
+        <ion-col col-6 text-center>
+          Add Card
+        </ion-col>
+        <ion-col col-3>
+          <a (click)="closeModal()">Save</a>
+        </ion-col>
+      </ion-row>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <!--<ion-img width="65" height="35" src="assets/images/card.png"></ion-img>-->
+  <div text-center padding>
+    <img src="assets/images/card.png" alt="">
+  </div>
+
+  <ion-list>
+    <button color="dark" ion-item (click)="goToCardNo()">card no.
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+
+    <ion-item-divider color="dark" >
+      <ion-input name="name" type="text" placeholder="Name" required>
+      </ion-input>
+    </ion-item-divider>
+  </ion-list>
+
+  <ion-list>
+    <button color="dark" ion-item (click)="goToDiscoverCards()">join
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+    <button color="dark" ion-item (click)="goToDiscoverCards()">expire
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+  </ion-list>
+
+</ion-content>

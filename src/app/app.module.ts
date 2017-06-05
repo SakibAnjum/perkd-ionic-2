@@ -22,8 +22,16 @@ import { SearchRegionModal } from '../pages/search-region-modal/search-region-mo
 import { AdvancedSettingsModal } from '../pages/advanced-settings-modal/advanced-settings-modal';
 import { TermsOfServiceModal } from '../pages/terms-of-service-modal/terms-of-service-modal';
 import { PrivacyPolicyModal } from '../pages/privacy-policy-modal/privacy-policy-modal';
-import { AssociationsNonProfits } from '../pages/associations-non-profits/associations-non-profits';
+import { AssociationsNonProfitsPage } from '../pages/associations-non-profits/associations-non-profits';
+import { ChildrenPage } from '../pages/children/children';
+import { FashionAccessoriesPage } from '../pages/fashion-accessories/fashion-accessories';
+import { FoodBeveragesPage } from '../pages/food-beverages/food-beverages';
+import { HealthBeautyPage } from '../pages/health-beauty/health-beauty';
+import { LifestyleServicesPage } from '../pages/lifestyle-services/lifestyle-services';
+import { MallsDepartmentStoresPage } from '../pages/malls-department-stores/malls-department-stores';
+import { TravelPage } from '../pages/travel/travel';
 import { AddCardModal } from '../pages/add-card-modal/add-card-modal';
+import { AddCustomCardModal } from '../pages/add-custom-card-modal/add-custom-card-modal';
 import { CardNoModal } from '../pages/card-no-modal/card-no-modal';
 import { BarcodePopoverPage } from '../pages/barcode-popover/barcode-popover';
 
@@ -49,8 +57,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AdvancedSettingsModal,
     TermsOfServiceModal,
     PrivacyPolicyModal,
-    AssociationsNonProfits,
+    AssociationsNonProfitsPage,
+    ChildrenPage,
+    FashionAccessoriesPage,
+    FoodBeveragesPage,
+    HealthBeautyPage,
+    LifestyleServicesPage,
+    MallsDepartmentStoresPage,
+    TravelPage,
     AddCardModal,
+    AddCustomCardModal,
     CardNoModal,
     BarcodePopoverPage,
     TabsPage
@@ -88,8 +104,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AdvancedSettingsModal,
     TermsOfServiceModal,
     PrivacyPolicyModal,
-    AssociationsNonProfits,
+    AssociationsNonProfitsPage,
+    ChildrenPage,
+    FashionAccessoriesPage,
+    FoodBeveragesPage,
+    HealthBeautyPage,
+    LifestyleServicesPage,
+    MallsDepartmentStoresPage,
+    TravelPage,
     AddCardModal,
+    AddCustomCardModal,
     CardNoModal,
     BarcodePopoverPage,
     TabsPage
