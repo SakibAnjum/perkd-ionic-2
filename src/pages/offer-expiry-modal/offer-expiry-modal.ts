@@ -10,10 +10,10 @@ import { ViewController } from 'ionic-angular';
  */
 @IonicPage()
 @Component({
-  selector: 'page-sample-modal',
-  templateUrl: 'before-card-expire-modal.html',
+  selector: 'page-offer-expiry-modal',
+  templateUrl: 'offer-expiry-modal.html',
 })
-export class BeforeCardExpireModal {
+export class OfferExpiryModal {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
   }

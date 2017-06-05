@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar hideBackButton color="yellow">
+    <ion-title ion-col>
+      <ion-row>
+        <ion-col col-3>
+          <ion-list text-left><a (click)="closeModal()">Cancel</a></ion-list>
+        </ion-col>
+        <ion-col col-6 text-center>
+          advanced settings
+        </ion-col>
+        <ion-col col-3>
+          <a (click)="closeModal()">Done</a>
+        </ion-col>
+      </ion-row>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item color="dark">
+      <ion-label>landscape card display</ion-label>
+      <ion-toggle [(ngModel)]="landscape"></ion-toggle>
+    </ion-item>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at cum delectus est illo in minus odio quaerat rem repellat voluptate, </p>
+  </ion-list>
+
+  <ion-list>
+    <ion-item color="dark">
+      <ion-label>automatic screen brightness</ion-label>
+      <ion-toggle [(ngModel)]="brightness"></ion-toggle>
+    </ion-item>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at cum delectus </p>
+  </ion-list>
+
+</ion-content>

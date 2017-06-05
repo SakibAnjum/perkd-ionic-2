@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar hideBackButton color="yellow">
+    <ion-title ion-col>
+        <ion-row>
+          <ion-col col-3>
+            <ion-list text-left><a (click)="closeModal()">Cancel</a></ion-list>
+          </ion-col>
+          <ion-col col-6 text-center>
+            discover cards
+          </ion-col>
+          <ion-col col-3>
+            <a (click)="closeModal()">Done</a>
+          </ion-col>
+        </ion-row>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <p>Cards available in these regions will be listed in Discover Automatically.</p>
+  <ion-list color="dark" ion-item>Bangladesh
+    <!--<icon-icon name="ios-navigate-outline"></icon-icon>-->
+    <ion-icon name="ios-navigate" item-right></ion-icon>
+  </ion-list>
+  <ion-list text-center>
+    <button ion-button type="submit" (click)="goToSearchRegion()">Add Region</button>
+  </ion-list>
+</ion-content>

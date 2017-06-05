@@ -6,7 +6,7 @@
 
 	<form #signupForm="ngForm" novalidate>
 		<ion-list no-lines>
-			<ion-item-divider sticky>
+			<ion-item-divider sticky color="dark">
 					<ion-row align-items-end (click)="openModal()">
 						<ion-col col-3>
 							<span>Bangladesh</span>
@@ -17,8 +17,8 @@
 					</ion-row>
 			</ion-item-divider>
 
-			<ion-item-divider>
-				<ion-input name="mobileNumber" type="number" placeholder="+880 " required>
+			<ion-item-divider color="dark">
+				<ion-input name="mobileNumber" type="text" placeholder="+880 " required>
 				</ion-input>
 			</ion-item-divider>
 		</ion-list>

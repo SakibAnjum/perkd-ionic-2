@@ -6,7 +6,7 @@ import { MyApp } from './app.component';
 
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
-import { AboutPage } from '../pages/about/about';
+import { DiscoverPage } from '../pages/discover/discover';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
@@ -15,7 +15,17 @@ import { PreferencesPage } from '../pages/preferences/preferences';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SampleModal } from '../pages/sample-modal/sample-modal';
 import { CountryListModal } from '../pages/country-list-modal/country-list-modal';
-import { BeforeCardExpireModal } from '../pages/before-card-expire-modal/before-card-expire-modal';
+import { CardExpiryModal } from '../pages/card-expiry-modal/card-expiry-modal';
+import { OfferExpiryModal } from '../pages/offer-expiry-modal/offer-expiry-modal';
+import { DiscoverCardsModal } from '../pages/discover-cards-modal/discover-cards-modal';
+import { SearchRegionModal } from '../pages/search-region-modal/search-region-modal';
+import { AdvancedSettingsModal } from '../pages/advanced-settings-modal/advanced-settings-modal';
+import { TermsOfServiceModal } from '../pages/terms-of-service-modal/terms-of-service-modal';
+import { PrivacyPolicyModal } from '../pages/privacy-policy-modal/privacy-policy-modal';
+import { AssociationsNonProfits } from '../pages/associations-non-profits/associations-non-profits';
+import { AddCardModal } from '../pages/add-card-modal/add-card-modal';
+import { CardNoModal } from '../pages/card-no-modal/card-no-modal';
+import { BarcodePopoverPage } from '../pages/barcode-popover/barcode-popover';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,18 +37,30 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SignupPage,
     CountryListModal,
     SampleModal,
-    AboutPage,
+    DiscoverPage,
     ContactPage,
     HomePage,
     ProfilePage,
     PreferencesPage,
-    BeforeCardExpireModal,
-    // BeforeCardExpirePage,
+    CardExpiryModal,
+    OfferExpiryModal,
+    DiscoverCardsModal,
+    SearchRegionModal,
+    AdvancedSettingsModal,
+    TermsOfServiceModal,
+    PrivacyPolicyModal,
+    AssociationsNonProfits,
+    AddCardModal,
+    CardNoModal,
+    BarcodePopoverPage,
     TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, {}, {
+    IonicModule.forRoot(MyApp, {
+      backButtonIcon: 'ios-arrow-back',
+      iconMode: 'ios',
+    }, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs' },
         // { component: PreferencesPage, name: 'Preferences', segment: preferences' },
@@ -54,13 +76,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SignupPage,
     CountryListModal,
     SampleModal,
-    AboutPage,
+    DiscoverPage,
     ContactPage,
     HomePage,
     ProfilePage,
     PreferencesPage,
-    BeforeCardExpireModal,
-    // BeforeCardExpirePage,
+    CardExpiryModal,
+    OfferExpiryModal,
+    DiscoverCardsModal,
+    SearchRegionModal,
+    AdvancedSettingsModal,
+    TermsOfServiceModal,
+    PrivacyPolicyModal,
+    AssociationsNonProfits,
+    AddCardModal,
+    CardNoModal,
+    BarcodePopoverPage,
     TabsPage
   ],
   providers: [

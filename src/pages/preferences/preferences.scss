@@ -1,15 +1,17 @@
 //$ion-content-background: #333;
 .preferences {
-  .scroll-content {
-    background: #333;
+  //.scroll-content {
+    //background: #333;
     h4 {
       color: #fff;
     }
     ion-item {
       //background: #000000;
       //color: #f1f1f1;
-    }
+    //}
   }
+
+
 
   .speaker-card {
     height: 100%;
@@ -36,4 +38,8 @@
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.action-sheet-container {
+  background: #333;
 }

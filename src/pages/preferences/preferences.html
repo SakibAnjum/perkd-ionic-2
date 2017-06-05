@@ -7,16 +7,51 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="preferences" padding>
+<ion-content class="preferences">
 
-  <h4>Remind me</h4>
   <ion-list>
-    <button color="dark" ion-item (click)="goToBeforeCardExpire()">before card expire
-      <ion-icon name="ios-arrow-forward" ></ion-icon>
+    <h4>Remind me</h4>
+    <button color="dark" ion-item (click)="goToCardExpiry()">before card expire
+      <span item-right>2 weeks</span>
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
     </button>
 
-    <button color="dark" ion-item>before offer expire
-      <ion-icon name="ios-arrow-forward" ></ion-icon>
+    <button color="dark" ion-item (click)="goToOfferExpiry()">before offer expire
+      <span item-right>1 week</span>
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
     </button>
   </ion-list>
+
+  <ion-list>
+    <h4>Recommend</h4>
+    <ion-item color="dark">
+      <ion-label>card i might like</ion-label>
+      <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <h4>Discover</h4>
+    <button color="dark" ion-item (click)="goToDiscoverCards()">list cards from
+      <span item-right>Bangladesh</span>
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+  </ion-list>
+
+  <ion-list>
+    <h4>Feedback</h4>
+    <button color="dark" ion-item (click)="openSend()">email us
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+
+    <button color="dark" ion-item (click)="goToAdvancedSettings()">advanced settings
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+  </ion-list>
+
+  <ion-list text-center>
+    <span (click)="goToTermsOfService()">terms of service</span> |
+    <span (click)="goToPrivacyPolicy()">privacy policy</span>
+  </ion-list>
+
 </ion-content>
