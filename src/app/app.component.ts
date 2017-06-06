@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
+import { DiscoverPage } from '../pages/discover/discover';
 import { PreferencesPage } from '../pages/preferences/preferences';
 
 import { TabsPage } from '../pages/tabs/tabs';
@@ -26,7 +27,7 @@ export interface PageInterface {
 export class MyApp {
 
   appPages: PageInterface[] = [
-    // { title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
+    { title: 'Discover', name: 'TabsPage', component: TabsPage, tabComponent: DiscoverPage, index: 0, icon: 'ios-compass-outline' },
     { title: 'Preferences', name: 'TabsPage', component: TabsPage, tabComponent: PreferencesPage, index: 1, icon: 'settings' },
     // { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
     // { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }

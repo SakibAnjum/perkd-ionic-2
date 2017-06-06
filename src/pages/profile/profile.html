@@ -1,11 +1,43 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>
-      Profile
-    </ion-title>
+  <ion-navbar color="yellow">
+    <ion-title text-center>Me</ion-title>
+    <ion-buttons right>
+      <a (click)="goToEdit()">Edit</a>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h4>This is Profile</h4>
+<ion-content>
+  <p padding-left margin-right>Your profile will be used to auto-fill forms when you add or sign-up for cards.</p>
+
+  <ion-list>
+    <ion-item color="dark">FirstName</ion-item>
+    <ion-item color="dark">LastName</ion-item>
+    <ion-item color="dark">
+      <span item-left>display as</span>
+      <span item-right>FirstName Lastname</span>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item color="dark">
+      <span item-left>gender</span>
+      <span item-right>Male</span>
+    </ion-item>
+
+    <ion-item color="dark">
+      <span item-left>birth date</span>
+      <span item-right>14 Jul 1990</span>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item color="dark">
+      <span item-left>mobile</span>
+      <span item-right>+880 1234-567890</span>
+    </ion-item>
+
+    <ion-item color="dark">mail@email.com</ion-item>
+  </ion-list>
+
 </ion-content>

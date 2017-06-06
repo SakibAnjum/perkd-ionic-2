@@ -1,18 +1,19 @@
 <ion-header>
   <ion-navbar color="yellow">
-    <ion-title text-center>Home</ion-title>
+    <ion-title>
+      <img item-start src="http://via.placeholder.com/24x26" alt="">
+      perkd
+      <span item-right>
+        <ion-icon item-right ios="ios-list" md="md-list"></ion-icon>
+        <ion-icon (click)="goToDiscover()" item-end ios="ios-add" md="md-add"></ion-icon>
+      </span>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <div text-center padding>
+    <img src="http://via.placeholder.com/370x180" alt="">
+  </div>
 </ion-content>
 

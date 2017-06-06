@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-// import { NavController } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import { NavController } from 'ionic-angular';
+// import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { DiscoverPage } from '../discover/discover';
 
 @Component({
   selector: 'page-home',
@@ -8,14 +10,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class HomePage {
 
-  // constructor(public navCtrl: NavController) {
+  // constructor() {
   //
   // }
 
-  constructor(private splashScreen: SplashScreen) {
-    this.splashScreen.show();
+  constructor(public navCtrl: NavController) {
+  }
 
-    this.splashScreen .hide();
+  goToDiscover() {
+    this.navCtrl.push(DiscoverPage);
   }
 
 }

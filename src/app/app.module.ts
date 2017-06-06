@@ -7,7 +7,7 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { DiscoverPage } from '../pages/discover/discover';
-import { ContactPage } from '../pages/contact/contact';
+import { ScannerPage } from '../pages/scanner/scanner';
 import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
 import { PreferencesPage } from '../pages/preferences/preferences';
@@ -33,6 +33,11 @@ import { TravelPage } from '../pages/travel/travel';
 import { AddCardModal } from '../pages/add-card-modal/add-card-modal';
 import { AddCustomCardModal } from '../pages/add-custom-card-modal/add-custom-card-modal';
 import { CardNoModal } from '../pages/card-no-modal/card-no-modal';
+import { ProfileEditModal } from '../pages/profile-edit-modal/profile-edit-modal';
+import { DisplayNameModal } from '../pages/display-name-modal/display-name-modal';
+import { SelectGenderModal } from '../pages/select-gender-modal/select-gender-modal';
+import { SelectBirthDateModal } from '../pages/select-birth-date-modal/select-birth-date-modal';
+import { UpdateMobileNumberModal } from '../pages/update-mobile-number-modal/update-mobile-number-modal';
 import { BarcodePopoverPage } from '../pages/barcode-popover/barcode-popover';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -46,7 +51,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CountryListModal,
     SampleModal,
     DiscoverPage,
-    ContactPage,
+    ScannerPage,
     HomePage,
     ProfilePage,
     PreferencesPage,
@@ -68,6 +73,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AddCardModal,
     AddCustomCardModal,
     CardNoModal,
+    ProfileEditModal,
+    DisplayNameModal,
+    SelectGenderModal,
+    SelectBirthDateModal,
+    UpdateMobileNumberModal,
     BarcodePopoverPage,
     TabsPage
   ],
@@ -93,7 +103,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CountryListModal,
     SampleModal,
     DiscoverPage,
-    ContactPage,
+    ScannerPage,
     HomePage,
     ProfilePage,
     PreferencesPage,
@@ -115,6 +125,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AddCardModal,
     AddCustomCardModal,
     CardNoModal,
+    ProfileEditModal,
+    DisplayNameModal,
+    SelectGenderModal,
+    SelectBirthDateModal,
+    UpdateMobileNumberModal,
     BarcodePopoverPage,
     TabsPage
   ],
