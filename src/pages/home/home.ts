@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-// import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { CardInfoModal } from '../card-info-modal/card-info-modal'
 
 import { DiscoverPage } from '../discover/discover';
 
@@ -19,6 +20,10 @@ export class HomePage {
 
   goToDiscover() {
     this.navCtrl.push(DiscoverPage);
+  }
+
+  goToCardInfo() {
+    this.navCtrl.push(CardInfoModal);
   }
 
 }

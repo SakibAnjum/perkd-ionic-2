@@ -6,8 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar color="yellow">
+  <ion-navbar hideBackButton color="yellow">
+
     <ion-title text-center>gender</ion-title>
+    <ion-buttons left>
+      <a (click)="closeModal()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></a>
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>

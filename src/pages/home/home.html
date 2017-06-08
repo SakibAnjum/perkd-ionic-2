@@ -1,19 +1,24 @@
 <ion-header>
+
   <ion-navbar color="yellow">
+
     <ion-title>
       <img item-start src="http://via.placeholder.com/24x26" alt="">
       perkd
-      <span item-right>
-        <ion-icon item-right ios="ios-list" md="md-list"></ion-icon>
-        <ion-icon (click)="goToDiscover()" item-end ios="ios-add" md="md-add"></ion-icon>
-      </span>
     </ion-title>
+
+    <ion-buttons right>
+      <ion-icon margin-right ios="ios-list" md="md-list"></ion-icon>
+      <a item-end (click)="goToDiscover()"><ion-icon ios="ios-add" md="md-add"></ion-icon></a>
+    </ion-buttons>
+
   </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
   <div text-center padding>
-    <img src="http://via.placeholder.com/370x180" alt="">
+    <img (click)="goToCardInfo()" src="http://via.placeholder.com/370x180" alt="">
   </div>
 </ion-content>
 

@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+    <ion-title text-center>My Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <p padding-left>Registered mobile number</p>
+  <h3 padding-left>+880 1234-567890</h3>
+  <ion-list>
+    <button color="dark" ion-item (click)="goToChangePassword()">change password
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+    <button color="dark" ion-item (click)="goToUpdateMobileNumber()">update mobile number
+      <ion-icon item-right name="ios-arrow-forward"></ion-icon>
+    </button>
+  </ion-list>
+
+  <p padding-left>Your registered mobile number is used for signing into your Perkd account.</p>
+  <p padding-left>Do keep it updated before you switch to a new phone or a new mobile number so that you can sign-in & restore your cards.</p>
+
+  <div padding>
+    <ion-row>
+      <ion-col col-6 offset-3>
+        <button color="dark" ion-button (click)="goToLogin()" type="submit" block>Logout</button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

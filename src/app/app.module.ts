@@ -38,6 +38,9 @@ import { DisplayNameModal } from '../pages/display-name-modal/display-name-modal
 import { SelectGenderModal } from '../pages/select-gender-modal/select-gender-modal';
 import { SelectBirthDateModal } from '../pages/select-birth-date-modal/select-birth-date-modal';
 import { UpdateMobileNumberModal } from '../pages/update-mobile-number-modal/update-mobile-number-modal';
+import { CardInfoModal } from '../pages/card-info-modal/card-info-modal';
+import { MyAccountModal } from '../pages/my-account-modal/my-account-modal';
+import { ChangePasswordModal } from '../pages/change-password-modal/change-password-modal';
 import { BarcodePopoverPage } from '../pages/barcode-popover/barcode-popover';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -78,6 +81,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelectGenderModal,
     SelectBirthDateModal,
     UpdateMobileNumberModal,
+    CardInfoModal,
+    MyAccountModal,
+    ChangePasswordModal,
     BarcodePopoverPage,
     TabsPage
   ],
@@ -130,6 +136,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelectGenderModal,
     SelectBirthDateModal,
     UpdateMobileNumberModal,
+    CardInfoModal,
+    MyAccountModal,
+    ChangePasswordModal,
     BarcodePopoverPage,
     TabsPage
   ],

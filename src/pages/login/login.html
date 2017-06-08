@@ -5,19 +5,16 @@
   </div>
 
   <form #signupForm="ngForm" novalidate>
-    <ion-list no-lines>
-      <ion-item-divider>
-        <!--<ion-level>-->
-            <!--+880-->
-        <!--</ion-level>-->
+    <ion-list>
+      <ion-item color="dark">
         <ion-input name="mobileNumber" type="number" placeholder="+880 " required>
         </ion-input>
-      </ion-item-divider>
+      </ion-item>
 
-      <ion-item-divider>
+      <ion-item color="dark">
         <ion-input name="password" type="password" placeholder="Password" required>
         </ion-input>
-      </ion-item-divider>
+      </ion-item>
     </ion-list>
 
     <div padding>
@@ -25,8 +22,10 @@
         <ion-col col-6 offset-2>
           <button ion-button (click)="onLogin(loginForm)" type="submit" block>Login</button>
         </ion-col>
-        <ion-col col-4>
-          <ion-icon name="finger-print"></ion-icon>
+        <ion-col col-2>
+          <button color="light" ion-button (click)="onLogin(loginForm)" type="submit">
+            <ion-icon name="finger-print"></ion-icon>
+          </button>
         </ion-col>
       </ion-row>
     </div>
